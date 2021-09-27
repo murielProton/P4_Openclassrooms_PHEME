@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Simple brute force implementation
+ * Class that read the data from file and returns it's data as a list of String
  *
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
@@ -15,16 +15,21 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	private String filepath;
 	
 	/**
-	 * 
-	 * @param filepath a full or partial path to file with symptom strings in it, one per line
+	 * CONSTRUCTOR of the object ReadSymptomDataFromFile
+	 * tacke one parametre only : path to the file
+	 * @param filepath
 	 */
 	public ReadSymptomDataFromFile (String filepath) {
 		this.filepath = filepath;
 	}
-	
+	/**
+	 * methode of the class ReadSymptomDataFromFile
+	 * must be used after having instanciate the object ReadSymptomDataFromFile
+	 * @param filepath
+	 */
 	@Override
 	public List<String> GetSymptoms() {
-		ArrayList<String> result = new ArrayList<String>();
+		List<String> result = new ArrayList<>();
 		
 		if (filepath != null) {
 			try {
