@@ -9,6 +9,7 @@ import java.util.List;
  * 
  * The implementation does not need to order the list
  * 
+ * is called in ReadSymptomDataFromFile.java
  */
 public interface ISymptomReader {
 	/**
