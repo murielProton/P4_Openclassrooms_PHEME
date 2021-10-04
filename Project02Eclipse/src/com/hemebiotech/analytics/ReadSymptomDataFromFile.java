@@ -4,9 +4,9 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+//import java.util.Map;
 
 /**
  * Class that read the data from file and returns it's data as a list of String
@@ -53,4 +53,29 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 		return result;
 	}
 //TODO MAPING OF THE FILE
+
+/*public Map<String,Symptom> getMapSymptoms() {
+	Map<String,Symptom> results =  new HashMap<>();
+	String line = null;
+	while (line != null) {
+
+
+		// Solution 1
+		if(results.get(line) != null){
+			Symptom currentSymptom = results.get(line);
+			currentSymptom.count++;
+			//Set la valeur
+		}else{
+			results.put(line, new Symptom(line, 1));
+		}
+
+		//Solution 2
+		if(results.get(line) == null){
+			results.put(line, new Symptom(line, 0));
+		}
+		Symptom currentSymptom = results.get(line);
+		currentSymptom.count++;
+	}
+	return results;
+}*/
 }
