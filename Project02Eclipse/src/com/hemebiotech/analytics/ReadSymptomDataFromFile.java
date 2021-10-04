@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.Map.Entry;
 
 /**
  * Class that read the data from file and returns it's data as a list of String
@@ -17,7 +16,6 @@ import java.util.Map.Entry;
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private String filepath;
-	private String lineOfResults;
 
 	/**
 	 * CONSTRUCTOR of the object ReadSymptomDataFromFile tacke one parametre only :
@@ -90,11 +88,5 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 			e.printStackTrace();
 		}
 		return results;
-	}
-	public static void main(String[] args) throws FileNotFoundException {
-		Map<String, Symptom> resultedMap = new ReadSymptomDataFromFile("symptoms.txt").getMapSymptoms();
-		for (Entry<String, Symptom> entry : resultedMap.entrySet()) {
-			System.out.println(entry.getValue());
-		}
 	}
 }

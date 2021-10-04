@@ -9,7 +9,7 @@ import java.util.Map.Entry;
 /*
  * Class which renders what AnalyticsCounter generates.
  */
-public class RenderOfAnalyticsCounter {
+public class RenderSymptomsAnalytics {
 	/**
 	 * methode writeSymptomsToFiles for each object symptom of the list, write a line in the file result.out
 	 * 1 parameters = List of Symptoms
