@@ -1,10 +1,11 @@
 package com.hemebiotech.analytics;
 
 import java.util.Set;
-//import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map.Entry;
+import java.util.Map;
 
 //import jdk.nashorn.internal.objects.SetIterator;
 
@@ -29,8 +30,11 @@ public class AnalyticsCounter {
 			resultedList.add(current);
 		}
 		RenderOfAnalyticsCounter.writeSymptomsToFiles(resultedList);
-		//new ReadSymptomDataFromFile("symptoms.txt").getMapSymptoms();
-		//RenderOfAnalyticsCounter.writeSymptomsToFiles(new ReadSymptomDataFromFile("symptoms.txt").getMapSymptoms());
+		Map<String, Symptom> resultedMap = new ReadSymptomDataFromFile("symptoms.txt").getMapSymptoms();
+		for (Entry<String, Symptom> entry : resultedMap.entrySet()) {
+			System.out.println(entry.getValue());
+		}
+		RenderOfAnalyticsCounter.writeMapedSymptomsToFiles(resultedMap);
 	}
 	/**
 	 * methode getCountFromListForSymptom counts counts the number of times a symptom is in a list
