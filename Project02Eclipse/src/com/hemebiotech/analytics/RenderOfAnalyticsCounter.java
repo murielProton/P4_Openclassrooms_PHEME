@@ -22,3 +22,4 @@ public class RenderOfAnalyticsCounter {
 	}
 
 }
+//AFAIRE implement variable with name of the file So that name of the file can be changed

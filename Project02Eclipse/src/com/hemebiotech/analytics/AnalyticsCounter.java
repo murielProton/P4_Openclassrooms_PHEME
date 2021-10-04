@@ -1,6 +1,7 @@
 package com.hemebiotech.analytics;
 
 import java.util.Set;
+//import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +29,8 @@ public class AnalyticsCounter {
 			resultedList.add(current);
 		}
 		RenderOfAnalyticsCounter.writeSymptomsToFiles(resultedList);
-
+		//new ReadSymptomDataFromFile("symptoms.txt").getMapSymptoms();
+		//RenderOfAnalyticsCounter.writeSymptomsToFiles(new ReadSymptomDataFromFile("symptoms.txt").getMapSymptoms());
 	}
 	/**
 	 * methode getCountFromListForSymptom counts counts the number of times a symptom is in a list

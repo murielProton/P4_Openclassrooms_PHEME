@@ -18,6 +18,22 @@ public class Symptom {
     public Symptom(String description, Integer count) {
 		this.description = description;
         this.count = count;
-	}
+    }
+    public Integer getCount(){
+      return count;
+    }
+    public void setCount(Integer numberOfOccurences) {
+      count=numberOfOccurences;
+    }
+    public String getDescription(){
+      return description;
+    }
+    public void setDescription(String nameOfSymptom) {
+      description = nameOfSymptom;
+    }
+    @Override
+    public String toString() {
+        return "Symptom : "+description +" => "+count;
+    }
     
 }
