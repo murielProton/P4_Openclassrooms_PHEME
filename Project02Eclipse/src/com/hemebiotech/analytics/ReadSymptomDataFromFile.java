@@ -27,39 +27,6 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	public ReadSymptomDataFromFile(String filepath) {
 		this.filepath = filepath;
 	}
-
-	/**
-	 * methode of the class ReadSymptomDataFromFile must be used after having
-	 * instanciate the object ReadSymptomDataFromFile is defined in interface
-	 * ISymptomReader.java
-	 * gets a file and return a List
-	 * Used in AnalyticsCounter.java
-	 * 
-	 * @param filepath
-	 */
-	@Override
-	public List<String> GetSymptoms() {
-		List<String> result = new ArrayList<>();
-
-		if (filepath != null) {
-			try {
-				BufferedReader reader = new BufferedReader(new FileReader(filepath));
-				String line = reader.readLine();
-
-				while (line != null) {
-					result.add(line);
-					line = reader.readLine();
-				}
-				reader.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-				//si mon fichier .txt il n'est pas présent ma methode va retourner une liste vide 
-				//on peut aussi utiliser un logger / repertoir de logg
-			}
-		}
-		return result;
-	}
-
 	/**
 	 * methode of the class ReadSymptomDataFromFile must be used after having
 	 * instanciate the object ReadSymptomDataFromFile
@@ -68,6 +35,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	 * 
 	 * @param filepath
 	 * @throws FileNotFoundException
+	 * @override
 	 */
 	public Map<String, Symptom> getMapSymptoms() throws FileNotFoundException {
 		Map<String, Symptom> results = new TreeMap<String, Symptom>();

@@ -12,19 +12,6 @@ import java.util.Map.Entry;
  */
 public class RenderSymptomsAnalytics {
 	static String fileName = "result.out";
-	static String otherFileName = "mappedResults.out";
-	/**
-	 * methode writeSymptomsToFiles for each object symptom of the list, write a line in the file result.out
-	 * 1 parameters = List of Symptoms
-	 * Used in AnalyticsCounter.java file in the Main Methode
-	 */
-  public static void writeSymptomsToFiles(List<Symptom> resultedList) throws IOException {
-		FileWriter writer = new FileWriter(fileName);
-		for (Symptom current : resultedList) {
-			writer.write(current.description+" : " + current.count + "\n");
-		}
-		writer.close();
-	}
 
 	/**
 	 * methode writeMapedSymptomsToFiles for each object symptom of the list, write a line in the file resultMaped.out
@@ -32,7 +19,7 @@ public class RenderSymptomsAnalytics {
 	 * Used in AnalyticsCounter.java file in the Main Methode
 	 */
 	public static void writeMapedSymptomsToFiles(Map<String, Symptom> resultedMap) throws IOException {
-		FileWriter writer = new FileWriter(otherFileName);
+		FileWriter writer = new FileWriter(fileName);
 		for (Entry<String, Symptom> entry : resultedMap.entrySet()) {
 			System.out.println(entry.getValue());
 			writer.write(entry.getValue().description+", "+ entry.getValue().count+".\n");
