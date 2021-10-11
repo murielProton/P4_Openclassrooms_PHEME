@@ -11,7 +11,7 @@ import java.util.TreeMap;
 
 /**
  * Class that read the data from file and returns it's data as a list of String
- * Used by : MainSymptomsAnalytics.java
+ * Used by : AnalyticsCounter.java
  * Interfaced by : ISymptomReader.java
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
@@ -33,7 +33,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	 * instanciate the object ReadSymptomDataFromFile is defined in interface
 	 * ISymptomReader.java
 	 * gets a file and return a List
-	 * Used in MainSymptomsAnalytics.java
+	 * Used in AnalyticsCounter.java
 	 * 
 	 * @param filepath
 	 */
@@ -53,6 +53,8 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 				reader.close();
 			} catch (IOException e) {
 				e.printStackTrace();
+				//si mon fichier .txt il n'est pas présent ma methode va retourner une liste vide 
+				//on peut aussi utiliser un logger / repertoir de logg
 			}
 		}
 		return result;
@@ -62,7 +64,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	 * methode of the class ReadSymptomDataFromFile must be used after having
 	 * instanciate the object ReadSymptomDataFromFile
 	 * gets a file and returns a Map ordered ASC
-	 * Used in MainSymptomsAnalytics.java
+	 * Used in AnalyticsCounter.java
 	 * 
 	 * @param filepath
 	 * @throws FileNotFoundException
