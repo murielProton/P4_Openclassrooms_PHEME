@@ -11,7 +11,8 @@ import java.util.TreeMap;
 
 /**
  * Class that read the data from file and returns it's data as a list of String
- *
+ * Used by : MainSymptomsAnalytics.java
+ * Interfaced by : ISymptomReader.java
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
@@ -29,8 +30,10 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	/**
 	 * methode of the class ReadSymptomDataFromFile must be used after having
-	 * instanciate the object ReadSymptomDataFromFile is called in
+	 * instanciate the object ReadSymptomDataFromFile is defined in interface
 	 * ISymptomReader.java
+	 * gets a file and return a List
+	 * Used in MainSymptomsAnalytics.java
 	 * 
 	 * @param filepath
 	 */
@@ -57,8 +60,9 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	/**
 	 * methode of the class ReadSymptomDataFromFile must be used after having
-	 * instanciate the object ReadSymptomDataFromFile is called in
-	 * ISymptomReader.java
+	 * instanciate the object ReadSymptomDataFromFile
+	 * gets a file and returns a Map ordered ASC
+	 * Used in MainSymptomsAnalytics.java
 	 * 
 	 * @param filepath
 	 * @throws FileNotFoundException

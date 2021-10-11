@@ -7,16 +7,19 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 /*
- * Class which renders what AnalyticsCounter generates.
+ * Class which renders what MainSymptomsAnalytics.java generates.
+ * Two Methodes one with a list that creates a file the other with a map that creates a file
  */
 public class RenderSymptomsAnalytics {
+	static String fileName = "result.out";
+	static String otherFileName = "mappedResults.out";
 	/**
 	 * methode writeSymptomsToFiles for each object symptom of the list, write a line in the file result.out
 	 * 1 parameters = List of Symptoms
-	 * Used in AnalyticsCounter.java file in the Main Methode
+	 * Used in MainSymptomsAnalytics.java file in the Main Methode
 	 */
   public static void writeSymptomsToFiles(List<Symptom> resultedList) throws IOException {
-		FileWriter writer = new FileWriter("result.out");
+		FileWriter writer = new FileWriter(fileName);
 		for (Symptom current : resultedList) {
 			writer.write(current.description+" : " + current.count + "\n");
 		}
@@ -26,10 +29,10 @@ public class RenderSymptomsAnalytics {
 	/**
 	 * methode writeMapedSymptomsToFiles for each object symptom of the list, write a line in the file resultMaped.out
 	 * 1 parameters = Map of Symptoms
-	 * Used in AnalyticsCounter.java file in the Main Methode
+	 * Used in MainSymptomsAnalytics.java file in the Main Methode
 	 */
 	public static void writeMapedSymptomsToFiles(Map<String, Symptom> resultedMap) throws IOException {
-		FileWriter writer = new FileWriter("resultMaped.out");
+		FileWriter writer = new FileWriter(otherFileName);
 		for (Entry<String, Symptom> entry : resultedMap.entrySet()) {
 			System.out.println(entry.getValue());
 			writer.write(entry.getValue().description+", "+ entry.getValue().count+".\n");
@@ -37,4 +40,3 @@ public class RenderSymptomsAnalytics {
 		writer.close();
 	}
 }
-//AFAIRE implement variable with name of the file So that name of the file can be changed

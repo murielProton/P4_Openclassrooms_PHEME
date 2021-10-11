@@ -15,10 +15,13 @@ import java.util.Map;
  */
 public class MainSymptomsAnalytics {
 	/**
-	 * methode MAIN counts the number of occurences within a list of strings,
-	 * instanciated by the object ReadSymptomDataFromFile.
+	 * methode MAIN 
+	 * first part of MAIN counts the number of occurences within a list of strings, in the case of a list approche of the matter
+	 * second part of MAIN uses getMapSymptoms which is a quicker way to implement what is going on in the first part. folow the technique of Map-Reduce => the file is only gone through once
+	 * To simplify the second part does nothing but calling the methodes that doese the job.
 	 */
 	public static void main(String args[]) throws Exception {
+		//First Part getting a list and sorting throught to count number of occurence of a string
 		ReadSymptomDataFromFile rowListOfSymptoms = new ReadSymptomDataFromFile("symptoms.txt");
 		List<String> listOfSymptoms = rowListOfSymptoms.GetSymptoms();
 		Set<String> setOfSymptoms = new TreeSet<String>(listOfSymptoms);
@@ -30,6 +33,7 @@ public class MainSymptomsAnalytics {
 			resultedList.add(current);
 		}
 		RenderSymptomsAnalytics.writeSymptomsToFiles(resultedList);
+		//Second part getting a Map sorted an rendering it by calling RenderSymptomsAnalytics.writeMapedSymptomsToFiles(resultedMap)
 		Map<String, Symptom> resultedMap = new ReadSymptomDataFromFile("symptoms.txt").getMapSymptoms();
 		for (Entry<String, Symptom> entry : resultedMap.entrySet()) {
 			System.out.println(entry.getValue());
@@ -37,7 +41,7 @@ public class MainSymptomsAnalytics {
 		RenderSymptomsAnalytics.writeMapedSymptomsToFiles(resultedMap);
 	}
 	/**
-	 * methode getCountFromListForSymptom counts counts the number of times a symptom is in a list
+	 * methode getCountFromListForSymptom counts the number of times a symptom is in a list
 	 * 2 parameters = List of string and a string
 	 * Used in this file by main
 	 */
