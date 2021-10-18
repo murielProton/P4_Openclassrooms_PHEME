@@ -18,6 +18,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	private String filepath;
 
 	/**
+	 * 
 	 * CONSTRUCTOR of the object ReadSymptomDataFromFile
 	 * parameter path to the file is called in AnalyticsCounter
 	 * 

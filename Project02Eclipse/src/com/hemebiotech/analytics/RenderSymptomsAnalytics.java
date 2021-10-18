@@ -13,7 +13,7 @@ import java.util.Map.Entry;
 public class RenderSymptomsAnalytics implements IRenderSymptomsAnalytics {
 	static String fileName = "result.out";
 
-	/**
+	/*
 	 * methode writeMapedSymptomsToFiles for each object symptom of the list, write a line in the file result.out
 	 * The fil result.out is saved in Project_Da8Java_En_Come_to_the_Rescue_of_a_Java_Application
 	 * 1 parameters = Map of Symptoms
