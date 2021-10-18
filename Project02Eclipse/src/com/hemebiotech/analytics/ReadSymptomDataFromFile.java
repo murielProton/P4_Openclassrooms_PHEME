@@ -8,10 +8,10 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * Class that reads the data from file and returns it's data as a list of String
- * Used by : AnalyticsCounter.java
- * Interface : ISymptomReader.java
- * Uses class Symptom
+ * Class that reads the data from file and returns it's data as a list of String<br>
+ * Used by : AnalyticsCounter.java<br>
+ * Interface : ISymptomReader.java<br>
+ * Uses class Symptom<br>
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 

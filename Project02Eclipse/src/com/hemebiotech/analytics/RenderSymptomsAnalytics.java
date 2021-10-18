@@ -5,10 +5,11 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Map.Entry;
 
-/*
+/**
  * Class which renders a Map into a file .out<br>
  * Used by : AnalyticsCounter.java<br>
- * Interface : IRenderSymptomsAnalytics.java
+ * Interface : IRenderSymptomsAnalytics.java<br>
+ * Uses : class Symptom<br>
  */
 public class RenderSymptomsAnalytics implements IRenderSymptomsAnalytics {
 	static String fileName = "result.out";

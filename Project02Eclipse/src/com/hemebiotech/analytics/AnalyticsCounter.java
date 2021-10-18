@@ -2,11 +2,11 @@ package com.hemebiotech.analytics;
 
 import java.util.Map;
 
-//import jdk.nashorn.internal.objects.SetIterator;
 
 /**
- * Class that counts the number of occurence of a symptom
- *
+ * Class Main that counts the number of occurence of a symptom<br>
+ * Uses class RenderSymptomsAnalytics and ReadSymptomDataFromFile<br>
+ * Process NO DATA<br>
  */
 public class AnalyticsCounter {
 	/**
@@ -17,7 +17,7 @@ public class AnalyticsCounter {
 	 * Calls : ReadSymptomDataFromFile("file.txt").getMapSymptoms() and RenderSymptomsAnalytics.writeMapedSymptomsToFiles(Type Map)
 	 */
 	public static void main(String args[]) throws Exception {
-		//Second part getting a Map sorted an rendering it by calling RenderSymptomsAnalytics.writeMapedSymptomsToFiles(resultedMap)
+		//getting a Map sorted an rendering it
 		Map<String, Symptom> resultedMap = new ReadSymptomDataFromFile("symptoms.txt").getMapSymptoms();
 		RenderSymptomsAnalytics.writeMapedSymptomsToFiles(resultedMap);
 	}

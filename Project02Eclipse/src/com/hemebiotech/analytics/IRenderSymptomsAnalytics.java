@@ -3,10 +3,10 @@ package com.hemebiotech.analytics;
 import java.io.IOException;
 import java.util.Map;
 
-/* 
- * 
+/**
+ * Interface to RenderSymptomsAnalytics<br>
  * Name : IRenderSymptomsAnalytics<br>
- * Interface to RenderSymptomsAnalytics
+ * 
  */
 public interface IRenderSymptomsAnalytics {
 	/**

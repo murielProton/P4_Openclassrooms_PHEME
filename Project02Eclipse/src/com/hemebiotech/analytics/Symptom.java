@@ -1,9 +1,10 @@
 package com.hemebiotech.analytics;
 
-/*
-* 
+/**
 * Object Symptoms <br>
-* parametter : String, Integer
+* Used by : RenderSymptomsAnalytics.java and ReadSymptomDataFromFile.java and AnalyticsCounter.java<br>
+* Interface : NO INTERFACE<br>
+* parametter : String, Integer<br>
 */
 public class Symptom {
     //propriétés

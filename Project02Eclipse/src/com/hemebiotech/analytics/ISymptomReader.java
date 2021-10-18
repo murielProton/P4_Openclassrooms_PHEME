@@ -3,9 +3,9 @@ package com.hemebiotech.analytics;
 import java.util.Map;
 
 /**
- * 
+ * Interface to SymptomReader<br>
  * Name : ISymptomReader<br>
- * Interface to SymptomReader
+ * 
  */
 public interface ISymptomReader {
 	/**
