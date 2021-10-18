@@ -6,15 +6,17 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 /*
- * Class which renders what AnalyticsCounter.java generates.
- * Two Methodes one with a list that creates a file the other with a map that creates a file
+ * Class which renders a Map into a file .out<br>
+ * Used by : AnalyticsCounter.java<br>
+ * Interface : IRenderSymptomsAnalytics.java
  */
 public class RenderSymptomsAnalytics implements IRenderSymptomsAnalytics {
 	static String fileName = "result.out";
 
-	/**
-	 * methode writeMapedSymptomsToFiles for each object symptom of the list, write a line in the file resultMaped.out
-	 * 1 parameters = Map of Symptoms
+	/*
+	 * methode writeMapedSymptomsToFiles for each object symptom of the list, write a line in the file result.out<br>
+	 * The fil result.out is saved in Project_Da8Java_En_Come_to_the_Rescue_of_a_Java_Application<br>
+	 * 1 parameters = Map of Symptoms<br>
 	 * Used in AnalyticsCounter.java file in the Main Methode
 	 */
 	public static void writeMapedSymptomsToFiles(Map<String, Symptom> resultedMap) throws IOException {
