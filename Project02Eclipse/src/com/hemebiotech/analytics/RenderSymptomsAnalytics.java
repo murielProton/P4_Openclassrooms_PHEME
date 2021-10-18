@@ -16,7 +16,6 @@ public class RenderSymptomsAnalytics implements IRenderSymptomsAnalytics {
 	 * methode writeMapedSymptomsToFiles for each object symptom of the list, write a line in the file resultMaped.out
 	 * 1 parameters = Map of Symptoms
 	 * Used in AnalyticsCounter.java file in the Main Methode
-	 * @overide
 	 */
 	public static void writeMapedSymptomsToFiles(Map<String, Symptom> resultedMap) throws IOException {
 		FileWriter writer = new FileWriter(fileName);

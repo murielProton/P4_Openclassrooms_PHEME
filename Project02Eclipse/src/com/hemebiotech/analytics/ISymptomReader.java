@@ -1,6 +1,6 @@
 package com.hemebiotech.analytics;
 
-//import java.util.Map;
+import java.util.Map;
 
 /**
  * Name : ISymptomReader
@@ -15,5 +15,5 @@ public interface ISymptomReader {
 	 * @return a raw listing of all Symptoms obtained from a data source, duplicates are possible/probable
 	 * @throws
 	 */
-	//public Map<String, Symptom> getMapSymptoms();
+	public Map<String, Symptom> getMapSymptoms();
 }
