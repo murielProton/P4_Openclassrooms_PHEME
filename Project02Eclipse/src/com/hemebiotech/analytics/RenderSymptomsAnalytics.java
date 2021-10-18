@@ -6,14 +6,16 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 /*
- * Class which renders what AnalyticsCounter.java generates.
- * Two Methodes one with a list that creates a file the other with a map that creates a file
+ * Class which renders a Map into a file .out
+ * Used by : AnalyticsCounter.java
+ * Interface : IRenderSymptomsAnalytics.java
  */
 public class RenderSymptomsAnalytics implements IRenderSymptomsAnalytics {
 	static String fileName = "result.out";
 
 	/**
-	 * methode writeMapedSymptomsToFiles for each object symptom of the list, write a line in the file resultMaped.out
+	 * methode writeMapedSymptomsToFiles for each object symptom of the list, write a line in the file result.out
+	 * The fil result.out is saved in Project_Da8Java_En_Come_to_the_Rescue_of_a_Java_Application
 	 * 1 parameters = Map of Symptoms
 	 * Used in AnalyticsCounter.java file in the Main Methode
 	 */

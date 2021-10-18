@@ -8,17 +8,18 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * Class that read the data from file and returns it's data as a list of String
+ * Class that reads the data from file and returns it's data as a list of String
  * Used by : AnalyticsCounter.java
- * Interfaced by : ISymptomReader.java
+ * Interface : ISymptomReader.java
+ * Uses class Symptom
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private String filepath;
 
 	/**
-	 * CONSTRUCTOR of the object ReadSymptomDataFromFile tacke one parametre only :
-	 * path to the file is called in AnalyticsCounter
+	 * CONSTRUCTOR of the object ReadSymptomDataFromFile
+	 * parameter path to the file is called in AnalyticsCounter
 	 * 
 	 * @param filepath
 	 */
@@ -29,7 +30,9 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	 * methode of the class ReadSymptomDataFromFile must be used after having
 	 * instanciate the object ReadSymptomDataFromFile
 	 * gets a file and returns a Map ordered ASC
+	 * Takes filepath as parameter
 	 * Used in AnalyticsCounter.java
+	 * 
 	 * 
 	 * @param filepath
 	 * @throws FileNotFoundException
