@@ -35,7 +35,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	 * @throws FileNotFoundException
 	 * @override
 	 */
-	public Map<String, Symptom> getMapSymptoms() throws FileNotFoundException {
+	public Map<String, Symptom> getMapSymptoms() {
 		Map<String, Symptom> results = new TreeMap<String, Symptom>();
 		if (filepath == null) {
 			return results;

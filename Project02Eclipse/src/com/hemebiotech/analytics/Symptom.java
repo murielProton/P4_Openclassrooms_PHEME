@@ -4,7 +4,7 @@ package com.hemebiotech.analytics;
 * Object Symptoms 
 * parametter : String, Integer
 */
-public class Symptom implements ISymptom {
+public class Symptom {
     //propriétés
     String description;
     Integer count;
