@@ -4,7 +4,7 @@ import java.util.Map;
 
 /**
  * 
- * Name : ISymptomReader
+ * Name : ISymptomReader<br>
  * Interface to SymptomReader
  */
 public interface ISymptomReader {

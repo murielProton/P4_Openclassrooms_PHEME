@@ -19,7 +19,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	/**
 	 * 
-	 * CONSTRUCTOR of the object ReadSymptomDataFromFile
+	 * CONSTRUCTOR of the object ReadSymptomDataFromFile<br>
 	 * parameter path to the file is called in AnalyticsCounter
 	 * 
 	 * @param filepath
@@ -28,10 +28,10 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 		this.filepath = filepath;
 	}
 	/**
-	 * methode of the class ReadSymptomDataFromFile must be used after having
-	 * instanciate the object ReadSymptomDataFromFile
-	 * gets a file and returns a Map ordered ASC
-	 * Takes filepath as parameter
+	 * methode of the class ReadSymptomDataFromFile must be used after having<br>
+	 * instanciate the object ReadSymptomDataFromFile<br>
+	 * gets a file and returns a Map ordered ASC<br>
+	 * Takes filepath as parameter<br>
 	 * Used in AnalyticsCounter.java
 	 * 
 	 * 

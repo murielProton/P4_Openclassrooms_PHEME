@@ -5,7 +5,7 @@ import java.util.Map;
 
 /* 
  * 
- * Name : IRenderSymptomsAnalytics
+ * Name : IRenderSymptomsAnalytics<br>
  * Interface to RenderSymptomsAnalytics
  */
 public interface IRenderSymptomsAnalytics {

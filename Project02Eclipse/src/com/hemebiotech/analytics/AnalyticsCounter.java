@@ -10,10 +10,10 @@ import java.util.Map;
  */
 public class AnalyticsCounter {
 	/**
-	 * methode MAIN 
-	 * NEEDS a .txt file in folder Project02Eclipse
-	 * Uses class RenderSymptomsAnalytics and ReadSymptomDataFromFile
-	 * Process NO DATA
+	 * methode MAIN <br>
+	 * NEEDS a .txt file in folder Project02Eclipse<br>
+	 * Uses class RenderSymptomsAnalytics and ReadSymptomDataFromFile<br>
+	 * Process NO DATA<br>
 	 * Calls : ReadSymptomDataFromFile("file.txt").getMapSymptoms() and RenderSymptomsAnalytics.writeMapedSymptomsToFiles(Type Map)
 	 */
 	public static void main(String args[]) throws Exception {
